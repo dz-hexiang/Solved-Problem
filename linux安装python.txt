@@ -1,0 +1,5 @@
+#选择个版本下载https://www.python.org/downloads/
+
+#下载
+wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
+
