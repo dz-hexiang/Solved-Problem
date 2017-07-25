@@ -1,0 +1,25 @@
+
+#查看网络设备信息 比如网卡的名字
+ifconfig -a
+
+#编辑网络配置
+vi /etc/network/interfaces
+#增加如下配置
+auto ens33
+iface ens33 inet static
+address 192.168.8.129
+netmask  255.255.255.0
+gateway  192.168.8.1
+#设置这个重启还有
+dns-nameservers 192.168.8.1
+
+
+#重启网络
+#网络启动不了 说/etc/network/interfaces配置错误，比如没有网卡之类
+/etc/init.d/networking restart
+
+#启用网络
+ifconfig ens33 up
+
+#ping 不通加dns nameserver 192.168.8.1 临时生效，重启就会恢复
+vi /etc/resolv.conf

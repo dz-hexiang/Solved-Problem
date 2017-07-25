@@ -1,0 +1,2 @@
+#gradle-wrapper.properties ÷–…Ë÷√
+distributionUrl=file\:/d:/gradle/gradle-3.3-all.zip

@@ -1,0 +1,6 @@
+#加入 tools:ignore="MissingTranslation" 属性 如下
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+ xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation" >
+</resources>

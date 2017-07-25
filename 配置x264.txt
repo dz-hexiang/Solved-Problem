@@ -1,0 +1,19 @@
+#安装支持环境
+#yum -y install build-essential nasm
+#wget http://www.nasm.us/pub/nasm/releasebuilds/2.13/linux/nasm-2.13-0.fc24.i386.rpm
+#rpm -ivh nasm-2.13-0.fc24.i386.rpm
+
+#ln -s /usr/mengqc/mub1 /usr/liu/abc
+
+
+cd /home/x264
+NDK=/home/ndk
+PLATFORM=$NDK/platforms/android-23/arch-arm
+PREBUILT=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64
+PREFIX=/home/android-ffmpeg
+
+./configure --prefix=/home/android-ffmpeg --enable-static --enable-pic --disable-asm --disable-cli --host=arm-linux --cross-prefix=$PREBUILT/bin/arm-linux-androideabi- --sysroot=$PLATFORM
+
+make -j8
+sudo make install
+sudo ldconfig
