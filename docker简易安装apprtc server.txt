@@ -32,12 +32,13 @@ docker run --rm \
 #chrome浏览器getting user media : Only secure origins are allowed 获取不到视频 是因为google需要https才能获取，改用firefox六拿起
 
 
- http://192.168.8.129:8080/
+http://192.168.8.129:8080/
   
 iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
 iptables -A INPUT -p tcp --dport 8089 -j ACCEPT 
 iptables -A INPUT -p tcp --dport 3478 -j ACCEPT
 iptables -A INPUT -p tcp --dport 3033 -j ACCEPT
+
 
 
 sudo ufw allow 8080
