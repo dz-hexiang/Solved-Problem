@@ -1,0 +1,1 @@
+adb pull /sdcard/DCIM/Screenshots e:\image
