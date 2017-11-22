@@ -1,6 +1,6 @@
 ---
 title:android-studio Android Duplicate files copied in APK
-date: 2017-11-21 17:36:17
+date: 2014-11-21 17:36:17
 tags:
 ---
 #### Duplicate files copied in APK META-INF/DEPENDENCIES File 1: httpmime-4.3.2.jar File 2: httpmime-4.3.2.jar     

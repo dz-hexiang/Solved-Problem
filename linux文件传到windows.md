@@ -1,6 +1,6 @@
 ---
 title: linux文件传到windows
-date: 2017-11-21 17:36:17
+date: 2017-4-15 17:36:17
 tags:
 ---
 #### linux 文件传到windows 文件

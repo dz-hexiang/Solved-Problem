@@ -1,6 +1,6 @@
 ---
 title: dep和rpm的安装
-date: 2017-11-21 17:36:17
+date: 2015-7-21 17:36:17
 tags:
 ---
 #### 一、deb 是 ubuntu 、debian 的格式,是debian发行版的软件包,ubuntu是基于debian 发行的 所有可以用。

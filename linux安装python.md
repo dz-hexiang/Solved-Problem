@@ -1,6 +1,6 @@
 ---
 title: linux安装python
-date: 2017-11-21 17:36:17
+date: 2016-4-13 17:36:17
 tags:
 ---
 #### 选择个版本下载https://www.python.org/downloads/

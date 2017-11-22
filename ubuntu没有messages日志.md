@@ -1,6 +1,6 @@
 ---
 title: ubuntu没有messages日志
-date: 2017-11-21 17:36:17
+date: 2017-4-15 17:36:17
 tags:
 ---
 #### 没有/var/log/messages
