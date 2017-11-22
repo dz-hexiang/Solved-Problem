@@ -1,3 +1,10 @@
+---
+title: mosquitto 和 opensips 安装及相关配置
+date: 2017-11-21 17:36:17
+tags:
+---
+
+```
 #!/bin/sh
 #print hello world in the console window
 echo -e "开始安装-----------------------------------------------------------"
@@ -204,26 +211,5 @@ sed -i -E '$ a mosquitto -c \/etc\/mosquitto\/mosquitto.conf -d' /etc/rc.d/rc.lo
 sed -i -E '$ a cd \/usr\/local\/sbin\/ ; .\/opensipsctl start' /etc/rc.d/rc.local
 sed -i -E '$ a systemctl restart  iptables.service' /etc/rc.d/rc.local
 sed -i -E '$ a systemctl restart WowzaStreamingEngine.service' /etc/rc.d/rc.local
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
+```
 

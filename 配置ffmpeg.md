@@ -1,6 +1,11 @@
+---
+title: 配置ffmpeg
+date: 2017-11-21 17:36:17
+tags:
+---
 
-
-
+#### 执行如下命令
+```
 cd /home/ffmpeg
 NDK=/home/ndk
 PLATFORM=$NDK/platforms/android-23/arch-arm
@@ -16,6 +21,10 @@ make&make -j8 install
 
 $PREBUILT/bin/arm-linux-androideabi-ar d libavcodec/libavcodec.a inverse.o
 $PREBUILT/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFORM/usr/lib -L$PREFIX/lib  -soname libffmpeg.so -shared -nostdlib   -Bsymbolic --whole-archive --no-undefined -o $PREFIX/libffmpeg.so libavcodec/libavcodec.a libavfilter/libavfilter.a libavresample/libavresample.a libavformat/libavformat.a libavutil/libavutil.a libswscale/libswscale.a libpostproc/libpostproc.a -lc -lm -lz -ldl -llog -lx264 --dynamic-linker=/system/bin/linker $PREBUILT/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a
+```
 
-#压缩
+#### 压缩
+
+```
 $PREBUILT/bin/arm-linux-androideabi-strip --strip-unneeded libffmpeg.so
+```

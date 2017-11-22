@@ -1,21 +1,39 @@
-#docker 安装
+---
+title: docker安装
+date: 2017-11-21 17:36:17
+tags:
+---
+#### docker 安装
+
+```
 sudo apt-get install -y docker.io
+```
 
-#引导时启用 docker
+#### 引导时启用 docker
 systemctl enable docker
+
+```
 /lib/systemd/systemd-sysv-install enable docker
+```
 
-#启动 Docker
+#### 启动 Docker
+
+```
 systemctl start docker
+```
 
 
 
-#其他命令
+#### 其他命令
+#### 查看所有已下载的images
 
-#查看所有已下载的images
+```
 docker images
+```
 
 
-#停止docker
+#### 停止docker
+```
 systemctl stop docker
+```
 
