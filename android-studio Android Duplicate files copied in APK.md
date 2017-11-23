@@ -1,5 +1,5 @@
 ---
-title:android-studio Android Duplicate files copied in APK
+title: android-studio Android Duplicate files copied in APK
 date: 2014-11-21 17:36:17
 tags:
 ---
